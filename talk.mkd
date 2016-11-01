@@ -4,8 +4,6 @@ class: center, middle, inverse
 ---
 ## PCMSolver: An Application Programming Interface for the Polarizable Continuum Model
 
-.subtitle[The PCM Goes Viral!]
-
 .author[Roberto Di Remigio, ] .coauthor[Luca Frediani]
 
 .institution[UiT -- The Arctic University of Norway]
@@ -13,7 +11,7 @@ class: center, middle, inverse
 .date[16 October 2016, Chongqing]
 
 .footnote[[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) licensed.
-Browse slides at [http://tinyurl.com/rdr-ict-hpcc16](http://tinyurl.com/rdr-ict-hpcc16)]
+Browse slides at [http://tinyurl.com/rdr-ctcc-seminar](http://tinyurl.com/rdr-ctcc-seminar)]
 
 ???
 
@@ -751,8 +749,9 @@ layout: false
 
 ## Acknowldegements
 
-- Prof. Luca Frediani
-- Dr. Radovan Bast
+- Prof. Luca Frediani (Tromsø)
+- Dr. Radovan Bast (Tromsø)
+- Dr. Lori A. Burns (Georgia Tech, Atlanta)
 
 ---
 name: last-page
@@ -762,9 +761,9 @@ template: inverse
 
 Slideshow created using [remark] and served using [cicero]
 
-Slides available on [GitHub](https://github.com/robertodr/talk-hzau)
+Slides available on [GitHub](https://github.com/robertodr/talk-ctcc-seminar)
 
-Browse slides at [http://tinyurl.com/rdr-ict-hpcc16](http://tinyurl.com/rdr-ict-hpcc16)
+Browse slides at [http://tinyurl.com/rdr-ctcc-seminar](http://tinyurl.com/rdr-ctcc-seminar)
 
 [remark]: https://github.com/gnab/remark
 [cicero]: https://github.com/bast/cicero
