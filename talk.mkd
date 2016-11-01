@@ -42,7 +42,7 @@ layout: false
 
 ---
 layout: false
-class: split-50
+class: split-50-50
 ## The Problem of Solvation
 
 .column[
@@ -104,7 +104,7 @@ Problems
 
 ---
 layout: false
-class: split-50
+class: split-50-50
 ## Multiscale models.red[<sup>1</sup>]
 
 - Use **quantum** and **classical** physics together:
@@ -129,7 +129,7 @@ class: split-50
 
 ---
 layout: false
-class: split-60
+class: split-60-40
 
 ## QM/Continuum.red[<sup>2</sup>]
 
@@ -155,7 +155,7 @@ class: split-60
 
 ---
 layout: false
-class: split-60
+class: split-60-40
 
 ## QM/Continuum: the polarizable continuum model.red[<sup>2</sup>]
 
@@ -309,7 +309,7 @@ $$`
 
 ---
 layout: false
-class: split-70
+class: split-70-30
 
 ## Boundary element method and PCM.red[<sup>5</sup>]
 
@@ -368,7 +368,7 @@ layout: false
 ---
 
 layout: false
-class: split-50
+class: split-50-50
 
 ## Do one thing, do it well.red[<sup>6</sup>]
 
@@ -441,7 +441,7 @@ class: split-50
 
 ---
 layout: false
-class: split-50
+class: split-50-50
 
 ## Must haves 2/2.red[<sup>6</sup>]
 
@@ -649,7 +649,7 @@ double energy =
 
 ---
 layout: false
-class: split-50
+class: split-50-50
 
 ## Solvation in the Relativistic Regime.red[<sup>*</sup>]
 
@@ -705,7 +705,7 @@ $$`
 
 ---
 layout: false
-class: split-50
+class: split-50-50
 
 ## Spherical Diffuse Interfaces.red[<sup>*</sup>]
 
@@ -725,7 +725,7 @@ class: split-50
 
 ---
 layout: false
-class: split-50
+class: split-50-50
 
 ## Spherical Diffuse Interfaces.red[<sup>*</sup>]
 
