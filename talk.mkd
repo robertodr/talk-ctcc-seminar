@@ -8,7 +8,7 @@ class: center, middle, inverse
 
 .institution[UiT -- The Arctic University of Norway]
 
-.date[16 October 2016, Chongqing]
+.date[4 November 2016, Tromsø]
 
 .footnote[[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) licensed.
 Browse slides at [http://tinyurl.com/rdr-ctcc-seminar](http://tinyurl.com/rdr-ctcc-seminar)]
