@@ -348,10 +348,12 @@ layout: false
 ---
 
 layout: false
+class: split-50-50
 
 ## Modular code development.red[<sup>6</sup>]
 
-### Examples
+.column[
+### Real world<sup>TM</sup> examples
 
 - Lego
 - Car manufacturing
@@ -362,6 +364,11 @@ layout: false
 - Separation of concerns
 - Composability
 - Leveraging functionality
+]
+.column[
+<p style="text-align:center;"><img src="images/hypnotoad-api.gif" style="width: 45%"></p>
+<p style="clear: both;">
+]
 
 .footnote[.red[<sup>6</sup>] Reproduced, with modifications, from [Library design the hard way](http://cicero.xyz/v2/remark/github/bast/talk-library-design/master/talk.mkd/#1)]
 
@@ -408,12 +415,14 @@ class: split-50-50
 
 ---
 
-## Library design in a modular world
+## Application Programming Interfaces to the Rescue
 
-<p style="text-align:center;"><img src="images/joe-paradiso-modular-synth-front.png" style="width: 500px;"/></p>
+_In computer programming, an __application programming interface__ (__API__) is a set of subroutine definitions, protocols, and tools for building software and applications._ .red[<sup>*</sup>]
+
+<p style="text-align:center;"><img src="images/darth-vader-api.gif" style="width: 70%;"/></p>
 <p style="clear: both;">
 
-- Copyright Joe Paradiso (MIT)
+.footnote[.red[<sup>*</sup>] [Wikipedia](https://en.wikipedia.org/wiki/Application_programming_interface)]
 
 ---
 
