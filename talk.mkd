@@ -177,6 +177,10 @@ A problem in classical electrostatics:
 \label{eq:radiation}
 \end{align}
 $$`
+
+* \\(L_\star\\) are elliptic differential operators
+* Dirichlet condition: \\([u] (\mathbf{s})\\)
+* Neumann condition: \\([\partial_L u] (\mathbf{s})\\)
 ]
 .column[
 <p style="text-align:right;"><img src="images/alanine.svg" style="width: 40%"></p>
@@ -191,36 +195,6 @@ $$`
 - Parameters for the definition of the boundary, i.e. the cavity
 - Parameters describing the solvent: permittivity (static and optical)
 - Notice that the solvent parameters are, _by definition_, averaged!
-
----
-## Mathematics of PCM.red[<sup>3</sup>]
-
-- Transmission problem, find \\(u\\) such that:
-`$$
- \begin{align}
-  L_\mathrm{i} u &= \nabla^2 u = -4\pi\rho \,\, \text{in}\,\, \Omega_\mathrm{i}\\
-  L_\mathrm{e} u &= 0 \,\, \text{in}\,\, \Omega_\mathrm{e} \\
-  [u](\mathbf{s}) &= u_\mathrm{e} - u_\mathrm{i} = 0 \,\, \text{on}\,\, \Gamma \\
-[\partial_L u](\mathbf{s}) &= \partial_{L_\mathrm{e}} u - \partial_{L_\mathrm{i}} u = 0 \,\, \text{on}\,\, \Gamma \\
-|u(\mathbf{r})| &\leq C \|\mathbf{r} \|^{-1} \,\,\text{for}\,\,\| \mathbf{r} \|\rightarrow\infty
- \end{align}
-$$`
-
-    * \\(L_\star\\) are elliptic differential operators
-    * Dirichelt condition: \\([u] (\mathbf{s})\\)
-    * Neumann condition: \\([\partial_L u] (\mathbf{s})\\)
-
-- Define the _reaction potential_:
-`$$
- u(\mathbf{r}) = \varphi(\mathbf{r}) + \xi(\mathbf{r})
- = \int_C \mathop{}\!\mathrm{d}\mathbf{r}^\prime \frac{\rho(\mathbf{r}^\prime)}{|\mathbf{r} - \mathbf{r}^\prime|} +
-  \int_{\partial C} \mathop{}\!\mathrm{d}\mathbf{s} \frac{\color{red}{\sigma(\mathbf{s})}}{|\mathbf{r} - \mathbf{s}|}
-$$`
-
-.footnote[.red[<sup>3</sup>] E. Cancès, B. Mennucci, _J. Math. Chem._, __23__, 309, (1998)]
-
-???
-
 - \\(L_\star\\) are elliptic differential operators
 - Trace operators are the extension of the concept of restriction of a function
   over a boundary to generalized functions in Sobolev space
@@ -229,35 +203,28 @@ $$`
 - \\(\sigma(\mathbf{s})\\) is called the apparent surface charge (ASC)
 
 ---
+## Mathematics of PCM.red[<sup>3</sup>]
 
-## Mathematics of PCM, contd..red[<sup>4</sup>]
-
-_Apparent surface charge_ (ASC):
-- _Unique solution_ to the IEF-PCM equation:
+- Define the _reaction potential_:
 `$$
-\left[\left(2\pi\mathcal{I} - \mathcal{D}_\mathrm{e}\right)\mathcal{S}_\mathrm{i} +
-      \mathcal{S}_\mathrm{e}\left(2\pi\mathcal{I} + \mathcal{D}^\dagger_\mathrm{i}\right) \right]\color{red}{\sigma} =
--\left[\left(2\pi\mathcal{I} - \mathcal{D}_\mathrm{e}\right) -
-\mathcal{S}_\mathrm{e}\mathcal{S}_\mathcal{i}^{-1}\left(2\pi\mathcal{I} - \mathcal{D}_\mathrm{i}\right)\right]\color{blue}{\varphi}
-$$`
-- Integral operators are Calderón projector components:
-`$$
- \begin{align}
-  (\mathcal{S}_\star f)(\mathbf{s}) &= \int_{\partial C} \mathop{}\!\mathrm{d}\mathbf{s}^\prime \color{red}{G_\star(\mathbf{s}, \mathbf{s}^\prime)}f(\mathbf{s}^\prime) \\
-  (\mathcal{D}_\star f)(\mathbf{s}) &= \int_{\partial C} \mathop{}\!\mathrm{d}\mathbf{s}^\prime [\partial_{L_\star}^\prime\color{red}{G_\star(\mathbf{s}, \mathbf{s}^\prime)}]f(\mathbf{s}^\prime) \\
-  (\mathcal{D}^\dagger_\star f)(\mathbf{s}) &= \int_{
-  \partial C} \mathop{}\!\mathrm{
-  d}\mathbf{s}^\prime [\partial_{
-  L_\star}\color{red}{G_\star(\mathbf{s}, \mathbf{s}^\prime)}]f(\mathbf{s}^\prime)
- \end{align}
+ u(\mathbf{r}) = \varphi(\mathbf{r}) + \xi(\mathbf{r})
+ = \int_C \mathop{}\!\mathrm{d}\mathbf{r}^\prime \frac{\rho(\mathbf{r}^\prime)}{|\mathbf{r} - \mathbf{r}^\prime|} +
+  \int_{\partial C} \mathop{}\!\mathrm{d}\mathbf{s} \frac{\color{red}{\sigma(\mathbf{s})}}{|\mathbf{r} - \mathbf{s}|}
 $$`
 
-<font color="red">
-<center>How to solve this? <img src="images/fearful.svg" style="width: 5%"></center>
-</font>
-<p style="clear: both;">
+- _Apparent surface charge_ (ASC):
+`$$
+\mathcal{R}_\varepsilon\mathcal{S}\color{red}{\sigma} = -\mathcal{R}_\infty\color{blue}{\varphi}
+$$`
 
-.footnote[.red[<sup>4</sup>] S. A. Sauter and C. Schwab, _Boundary Element Methods_, Springer, 2011]
+- Green's function for \\(L_\star\\) define integral operators:
+  - Homogeneous and isotropic
+  - Tensorial permittivity (liquid crystals)
+  - Spatially-dependent permittivity (interfaces)
+  - Damped Coulomb (ionic liquid)
+  - Conductor-like boundary conditions (COSMO)
+
+.footnote[.red[<sup>3</sup>] E. Cancès, B. Mennucci, _J. Math. Chem._, __23__, 309, (1998)]
 
 ???
 
@@ -269,45 +236,6 @@ $$`
   the method
 
 ---
-
-## Isotropic PCM and COSMO.red[<sup>2</sup>]
-
-* _homogeneous_ and _isotropic_ dielectric, \\(\varepsilon\\)
-`$$
- \begin{alignat}{2}
- G_\mathrm{e}(\mathbf{r}, \mathbf{r}^\prime)
- = \frac{1}{\varepsilon |\mathbf{r} - \mathbf{r}^\prime| }
- = \frac{1}{
-\varepsilon}G_\mathrm{i}(\mathbf{r}, \mathbf{r}^\prime),
- \quad&
- G_\mathrm{i}(\mathbf{r}, \mathbf{r}^\prime)
- = \frac{1}{|\mathbf{r} - \mathbf{r} ^\prime | }
- \end{alignat}
-$$`
-Then one has:
-`$$
-\left[ 2\pi \left(\frac{\varepsilon+1}{\varepsilon-1}\right) - \mathcal{D}\right]
-\mathcal{S}\color{red}{\sigma} = -\left( 2\pi - \mathcal{D} \right)
-\color{blue}{\varphi}
-$$`
-
-* Let \\(\varepsilon\rightarrow\infty\\), then:
-`$$
-\mathcal{S}\color{red}{\sigma} = -f(\varepsilon)\color{blue}{\varphi},
-\quad
-f(\varepsilon) = \frac{\varepsilon -  1}{\varepsilon + x},\quad 0 \leq x \leq 1
-$$`
-
-<font color="red">
-<center>How to solve these? <img src="images/fearful.svg" style="width: 5%"></center>
-</font>
-<p style="clear: both;">
-
-.footnote[.red[<sup>2</sup>] J. Tomasi, B. Mennucci, R. Cammi, _Chem. Rev._, __105__, 2999, (2005)]
-
-???
-
----
 layout: false
 class: split-70-30
 
@@ -317,11 +245,11 @@ class: split-70-30
 Solution by a boundary element method (BEM)
 
 * \\(N_\mathrm{ts}\\) finite elements on the cavity boundary
-* Form boundary integral operators: _Galerkin_ or _collocation_ method
+* Form boundary integral operators
 `$$
- \mathbf{T}(\varepsilon)\color{red}{\mathbf{q}} = - \mathbf{R}\color{blue}{\mathbf{v}}
+ \mathbf{R}_\varepsilon\mathbf{S}\color{red}{\mathbf{q}} = - \mathbf{R}_\infty\color{blue}{\mathbf{v}}
 $$`
-* Solve linear system: direct inversion or iterative solver
+* Solve linear system
 ]
 .column[
 <p style="text-align:right;"><img src="images/benzene_GePol.png" style="width: 30%"></p>
@@ -334,6 +262,9 @@ $$`
 .footnote[.red[<sup>5</sup>] A. Ern and J. L. Guermond, _Theory and Practice of Finite Elements_, Springer, 2004]
 
 ???
+
+- _Galerkin_ or _collocation_ method
+- Direct inversion or iterative solver
 
 ---
 layout: false
@@ -350,34 +281,7 @@ layout: false
 layout: false
 class: split-50-50
 
-## Modular code development.red[<sup>6</sup>]
-
-.column[
-### Real world<sup>TM</sup> examples
-
-- Lego
-- Car manufacturing
-- Modular composition when you order a laptop
-
-### Advantages
-
-- Separation of concerns
-- Composability
-- Leveraging functionality
-]
-.column[
-<p style="text-align:center;"><img src="images/hypnotoad-api.gif" style="width: 45%"></p>
-<p style="clear: both;">
-]
-
-.footnote[.red[<sup>6</sup>] Reproduced, with modifications, from [Library design the hard way](http://cicero.xyz/v2/remark/github/bast/talk-library-design/master/talk.mkd/#1)]
-
----
-
-layout: false
-class: split-50-50
-
-## Do one thing, do it well.red[<sup>6</sup>]
+## Modularity: do one thing, do it well.red[<sup>6</sup>]
 
 .column[
 ### Coupling
@@ -395,7 +299,7 @@ class: split-50-50
 ]
 <p style="clear: both;">
 
-.footnote[.red[<sup>6</sup>] Reproduced from [Library design the hard way](http://cicero.xyz/v2/remark/github/bast/talk-library-design/master/talk.mkd/#1)]
+.footnote[.red[<sup>6</sup>] Reproduced, with modifications, from [Library design the hard way](http://cicero.xyz/v2/remark/github/bast/talk-library-design/master/talk.mkd/#1)]
 
 ???
 
@@ -417,16 +321,29 @@ class: split-50-50
 
 ## Application Programming Interfaces to the Rescue
 
-_In computer programming, an __application programming interface__ (__API__) is a set of subroutine definitions, protocols, and tools for building software and applications._ .red[<sup>*</sup>]
+From [Wikipedia](https://en.wikipedia.org/wiki/Application_programming_interface):
+_In computer programming, an __application programming interface__ (__API__) is
+a set of subroutine definitions, protocols, and tools for building software and
+applications._
 
-<p style="text-align:center;"><img src="images/darth-vader-api.gif" style="width: 70%;"/></p>
+<p style="text-align:center;"><img src="images/hypnotoad-api.gif" style="width: 50%;"/></p>
 <p style="clear: both;">
-
-.footnote[.red[<sup>*</sup>] [Wikipedia](https://en.wikipedia.org/wiki/Application_programming_interface)]
 
 ---
 
-## Must haves 1/2.red[<sup>6</sup>]
+## How to API like a pro
+
+* __Encapsulation__ decide what others should know
+* __Development history__ know your past
+* __Documentation__ let others know what you can do
+* __Versioning__ where are we at?
+* __Testing__ did you mess up?
+<p style="text-align:center;"><img src="images/why_you_need_testing.jpg" style="width: 45%;"/></p>
+<p style="clear: both;">
+* __Building__ can it stand on its own feet?
+* __Deploying__ get it out in the open!
+
+???
 
 ### Encapsulation
 
@@ -446,37 +363,15 @@ _In computer programming, an __application programming interface__ (__API__) is 
 - Versioned API ([semantic](http://semver.org) or [sentimental](http://sentimentalversioning.org)
   or [romantic](https://github.com/jashkenas/backbone/issues/2888#issuecomment-29076249) versioning)
 
-.footnote[.red[<sup>6</sup>] Reproduced from [Library design the hard way](http://cicero.xyz/v2/remark/github/bast/talk-library-design/master/talk.mkd/#1)]
-
----
-layout: false
-class: split-50-50
-
-## Must haves 2/2.red[<sup>6</sup>]
-
-.column[
 ### Testing
 
 - Sharpens interfaces
 - Exposes coupling and cohesion
-]
-.column[
-<p style="text-align:center;"><img src="images/why_you_need_testing.jpg" style="width: 45%;"/></p>
-]
-<p style="clear: both;">
 
 ### Building and deploying
 
 - Prerequisite for testable on its own
 - Suitable distribution mechanisms
-
-.footnote[.red[<sup>6</sup>] Reproduced from [Library design the hard way](http://cicero.xyz/v2/remark/github/bast/talk-library-design/master/talk.mkd/#1)]
-
-???
-
-- It helps catch bugs (see pic)
-- It helps define **what** the library does
-- It helps define **input** and **output** to and from the library
 
 ---
 
@@ -532,6 +427,33 @@ class: split-50-50
 .footnote[.red[<sup>7</sup>] Find it at [pcmsolver.readthedocs.io](http://pcmsolver.readthedocs.io/en/latest/) and [github.com/PCMSolver/pcmsolver](https://github.com/PCMSolver/pcmsolver)]
 
 ---
+layout: false
+class: split-50-50
+
+## One PCM to rule them all
+
+.column[
+
+### Currently interfaced programs
+
+- DALTON
+- LSDALTON
+- Psi4
+- DIRAC
+- ReSpect
+- KOALA
+]
+.column[
+<p style="text-align:center;"><img src="images/Brain1.jpg" style="width: 50%"></p>
+<p style="clear: both;">
+]
+
+### What's in it for us?
+
+- Separation of concerns
+- Leveraging functionality
+
+???
 
 ## Interfaces to QM programs
 
@@ -548,10 +470,6 @@ class: split-50-50
   * HF and DFT
   * Status: **released**
 
----
-
-## Interfaces to QM programs, contd.
-
 - DIRAC (w/ T. Saue)
   * 4-component, Kramers restricted, HF and DFT up to linear static electric response properties
   * Status: **released**
@@ -566,101 +484,15 @@ class: split-50-50
   * Status: **unreleased**
 
 ---
-
-## Using PCMSolver
-
-[Context-aware](https://github.com/bast/context-api-example) API
-  * _Opaque_ handle
-  * Confine **state** to library
-  * Hide initialization/finalization operations
-  * Multiple contexts possible
-
-```C
-/*! Forward-declare opaque handle to a PCM context */
-typedef struct pcmsolver_context_t pcmsolver_context_t;
-```
-
----
-
-## Using PCMSolver, contd.
-
-[Context-aware](https://github.com/bast/context-api-example) API
-
-#### Initialization
-
-```C++
-#ifndef AS_TYPE
-#define AS_TYPE(Type, Obj) reinterpret_cast<Type *>(Obj)
-#endif
-
-pcmsolver_context_t * pcmsolver_new(pcmsolver_reader_t input_reading, int
-    nr_nuclei, double charges[], double coordinates[], int symmetry_info[],
-    PCMInput * host_input)
-{
-  return AS_TYPE(pcmsolver_context_t, new pcm::Meddle(input_reading,
-        nr_nuclei, charges, coordinates, symmetry_info, *host_input));
-}
-```
-#### Finalization
-
-```C++
-void pcmsolver_delete(pcmsolver_context_t * context)
-{
-  if (!context) return;
-  delete AS_TYPE(pcm::Meddle, context);
-}
-```
-
----
-
-## Using PCMSolver, contd.
-
-[Context-aware](https://github.com/bast/context-api-example) API
-  * Operations require context
-  * Enforce namespacing by convention
-  * `get` and `set` functions
-
-```C
-pcmsolver_context_t * pcm_context = pcmsolver_new(PCMSOLVER_READER_OWN,
-    NR_NUCLEI, charges, coordinates, symmetry_info, &host_input);
-
-pcmsolver_print(pcm_context);
-
-int grid_size = pcmsolver_get_cavity_size(pcm_context);
-int irr_grid_size = pcmsolver_get_irreducible_cavity_size(pcm_context);
-double * grid = (double *) calloc(3*grid_size, sizeof(double));
-pcmsolver_get_centers(pcm_context, grid);
-```
-
----
-
-## Using PCMSolver, contd.
-
-[Surface functions](http://pcmsolver.readthedocs.io/en/latest/users/interfacing.html#how-pcmsolver-handles-potentials-and-charges-surface-functions)
-  * PCM \\(\Leftrightarrow\\) functions defined on cavity surface
-  * Function label + function data = surface function
-  * Map of labels and data
-
-```C
-double * mep = nuclear_mep(NR_NUCLEI, charges, coordinates, grid_size, grid);
-const char * mep_label = {"NucMEP"};
-pcmsolver_set_surface_function(pcm_context, grid_size, mep, mep_label);
-
-const char * asc_label = {"NucASC"};
-int irrep = 0;
-pcmsolver_compute_asc(pcm_context, mep_label, asc_label, irrep);
-double * asc = (double *) calloc(grid_size, sizeof(double));
-pcmsolver_get_surface_function(pcm_context, grid_size, asc, asc_label);
-
-double energy =
-       pcmsolver_compute_polarization_energy(pcm_context, mep_label, asc_label);
-```
-
----
 layout: false
-class: split-50-50
+class: split-60-40
 
-## Solvation in the Relativistic Regime.red[<sup>*</sup>]
+## Solvation in the Relativistic Regime.red[<sup>a, b</sup>]
+
+.column[
+- Transparent formulation
+- Same workflow as 1-component
+- Extended to EPR and pNMR parameters (ReSpect)
 
 `$$
 \mathbf{F} = \begin{pmatrix}
@@ -668,26 +500,16 @@ class: split-50-50
 \mathbf{F}^{SL, \mathrm{vac}} & \mathbf{F}^{SS, \mathrm{vac}} + \mathbf{q}\cdot\mathbf{v}^{SS}
 \end{pmatrix}
 $$`
-- Extended to EPR and pNMR parameters (ReSpect)
-
-<p style="clear: both;">
-
-.column[
-`$$
-\mathrm{H}_2\mathrm{O}
-$$`
-<p style="text-align:center;"><img src="images/H2O_MEP-diff-pcmdc-dc.png" style="width: 75%"></p>
-<p style="clear: both;">
 ]
 .column[
-`$$
-\mathrm{H}_2\mathrm{Po}
-$$`
-<p style="text-align:center;"><img src="images/H2Po_MEP-diff-pcmdc-dc.png" style="width: 38%"></p>
+<p style="text-align:center;"><img src="images/model-chem.svg" style="width: 40%"></p>
 <p style="clear: both;">
 ]
 
-.footnote[.red[<sup>*</sup>] R. Di Remigio, R. Bast, L. Frediani, T. Saue, _J. Phys. Chem. A_, __119__, 5061, (2015)]
+.footnote[.red[<sup>a</sup>] R. Di Remigio, R. Bast, L. Frediani, T. Saue, _J. Phys. Chem. A_, __119__, 5061, (2015)
+
+.red[<sup>b</sup>] R. Di Remigio, M. Repisky, S. Komorovsky, P. Hrobarik, L. Frediani, K. Ruud, _Mol. Phys._, (2016)
+]
 
 ---
 

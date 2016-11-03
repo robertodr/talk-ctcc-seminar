@@ -13,7 +13,7 @@
    height="342.17001"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="model-chem.svg">
   <sodipodi:namedview
      id="base"
@@ -28,10 +28,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="719"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -313,54 +313,54 @@
          y="522.56854">HF</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;stroke:none"
        x="238.00641"
-       y="483.50449"
+       y="489.08661"
        id="text5721"><tspan
          sodipodi:role="line"
          id="tspan5723"
          x="238.00641"
-         y="483.50449">MP2</tspan></text>
+         y="489.08661">MP2</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;stroke:none"
        x="238.49274"
-       y="464.40527"
+       y="455.48459"
        id="text5725"><tspan
          sodipodi:role="line"
          id="tspan5727"
          x="238.49274"
-         y="464.40527">CC2</tspan></text>
+         y="455.48459">CC2</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;stroke:none"
        x="283.85199"
-       y="451.7114"
+       y="438.71286"
        id="text5729"><tspan
          sodipodi:role="line"
          id="tspan5731"
          x="283.85199"
-         y="451.7114">MCSCF</tspan></text>
+         y="438.71286">MCSCF</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;stroke:none"
        x="284.14496"
-       y="480.13998"
+       y="472.25629"
        id="text5733"><tspan
          sodipodi:role="line"
          id="tspan5735"
          x="284.14496"
-         y="480.13998">CI</tspan></text>
+         y="472.25629">CI</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;stroke:none"
        x="284.14496"
-       y="410.42569"
+       y="405.1694"
        id="text5737"><tspan
          sodipodi:role="line"
          id="tspan5739"
          x="284.14496"
-         y="410.42569">CASPT2</tspan></text>
+         y="405.1694">CASPT2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
@@ -373,64 +373,44 @@
          y="354.85425">FCI</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;stroke:none"
        x="233.49176"
-       y="445.32367"
+       y="421.94113"
        id="text5745"><tspan
          sodipodi:role="line"
          id="tspan5747"
          x="233.49176"
-         y="445.32367">CCSD</tspan></text>
+         y="421.94113">CCSD</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;stroke:none"
        x="225.71637"
-       y="386.88931"
+       y="370.60059"
        id="text5749"><tspan
          sodipodi:role="line"
          id="tspan5751"
          x="225.71637"
-         y="386.88931">CCSD(T)</tspan></text>
+         y="370.60059">CCSD(T)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;stroke:none"
        x="238.44879"
-       y="407.15747"
+       y="388.39771"
        id="text5753"><tspan
          sodipodi:role="line"
          id="tspan5755"
          x="238.44879"
-         y="407.15747">CC3</tspan></text>
+         y="388.39771">CC3</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-       x="237.96246"
-       y="426.18344"
-       id="text5757"><tspan
-         sodipodi:role="line"
-         id="tspan5759"
-         x="237.96246"
-         y="426.18344">MP3</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-       x="237.98004"
-       y="368.99713"
-       id="text5761"><tspan
-         sodipodi:role="line"
-         id="tspan5763"
-         x="237.98004"
-         y="368.99713">MP4</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;stroke:none"
        x="227.71637"
-       y="501.42569"
+       y="505.79974"
        id="text5765"><tspan
          sodipodi:role="line"
          id="tspan5767"
          x="227.71637"
-         y="501.42569">KS-DFT</tspan></text>
+         y="505.79974">KS-DFT</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
