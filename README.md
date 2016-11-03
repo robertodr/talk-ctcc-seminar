@@ -1,4 +1,4 @@
-# talk-ict-hpcc16
+# talk-ctcc-seminar
 Introduction to modular code development and PCMSolver. Talk given at a CTCC joint seminar in Tromsø.
 Slides created using [remark] and served using [cicero]. Have a look [here].
 

@@ -4,7 +4,7 @@ class: center, middle, inverse
 ---
 ## PCMSolver: An Application Programming Interface for the Polarizable Continuum Model
 
-.author[Roberto Di Remigio, ] .coauthor[Luca Frediani]
+.author[Roberto Di Remigio]
 
 .institution[UiT -- The Arctic University of Norway]
 
