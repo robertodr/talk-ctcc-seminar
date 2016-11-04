@@ -165,7 +165,7 @@ class: split-60-40
 - Vacuum inside cavity \\(\varepsilon=1\\)
 - Solute charge density _entirely_ in \\(\Omega_i\\)
 
-A problem in classical electrostatics:
+### Transmission problem
 `$$
   \begin{align}
   L_\mathrm{i} u &= \nabla^2 u = -4\pi\rho \,\, \text{in}\,\, \Omega_\mathrm{i} \label{eq:internal} \\
