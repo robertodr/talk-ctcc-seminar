@@ -288,14 +288,14 @@ class: split-50-50
 ### Coupling
 - Strong
 <p style="text-align:center;"><img src="images/strong-coupling.svg" style="width: 45%"></p>
-- Loose
+- .red[Loose]
 <p style="text-align:center;"><img src="images/loose-coupling.svg" style="width: 45%"></p>
 ]
 .column[
 ### Cohesion
 - Low
 <p style="text-align:center;"><img src="images/low-cohesion.svg" style="width: 15%"></p>
-- High
+- .red[High]
 <p style="text-align:center;"><img src="images/high-cohesion.svg" style="width: 10%"></p>
 ]
 <p style="clear: both;">
