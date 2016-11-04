@@ -134,7 +134,7 @@ class: split-60-40
 ## QM/Continuum.red[<sup>2</sup>]
 
 - Use **quantum** and **classical** physics together:
-  * quantum for chemically relevant subsystem
+  * **quantum** for chemically relevant subsystem
   * _continuum dielectric_ for the environment
 
 .column[
