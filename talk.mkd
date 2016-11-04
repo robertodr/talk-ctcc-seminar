@@ -108,8 +108,8 @@ class: split-50-50
 ## Multiscale models.red[<sup>1</sup>]
 
 - Use **quantum** and **classical** physics together:
-  * quantum for chemically relevant subsystem
-  * classical for the environment
+  * **quantum** for chemically relevant subsystem
+  * **classical** for the environment
 
 .column[
 <p style="text-align:center;"><img src="images/gfp_barrel.png" style="width: 100%"></p>
