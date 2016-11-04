@@ -244,6 +244,7 @@ class: split-70-30
 .column[
 Solution by a boundary element method (BEM)
 
+* Cavity of interlocking, atom-centered spheres
 * \\(N_\mathrm{ts}\\) finite elements on the cavity boundary
 * Form boundary integral operators
 `$$
